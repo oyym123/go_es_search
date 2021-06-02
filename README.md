@@ -566,6 +566,8 @@ $config["essearch"]["product"] = $product;
 
 test.php
 ```
+<?php
+
         $es = new EsActionService();
         //搜索项
         $condition = [
