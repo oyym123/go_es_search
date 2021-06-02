@@ -369,9 +369,9 @@ essearch.php
 ```
 //产品模块ES映射
 $product = [
-    'url' => $urlEnv,
-    'index' => $indexEnv,
-    'mqType' => $env,  //mq使用的配置 默认 []
+    'url' => '127.0.0.1:9003',
+    'index' => 'product',
+    'mqType' => 'default',  //mq使用的配置 默认 []
     'rabbitmq' => [
         'ex_name' => 'GO_ES_SEARCH',
         'qu_name' => 'dcm_product_es_search',
