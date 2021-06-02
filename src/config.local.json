@@ -1,0 +1,41 @@
+{
+    "AppName":"searchEs",
+    "Listen": ":9002",
+    "HttpListen": ":9003",
+    "AppEnv":"local",
+    "APISecret":"lln9hmndsx",
+    "BasePath":"/mnt/hgfs/git/pushservice/src",
+    "Logger": {
+        "Debug": true,
+        "OutFile": true,
+        "LogPath":"logs",
+        "MaxAge": 360,
+        "RotationTime" : 1
+    },
+    "DataBase": {
+        "default": {
+            "DriverName": "mysql",
+            "DataSourceName": "root:4xKJoHJC92dQNX2Z@tcp(127.0.0.1:3306)/yibai_dcm_message?charset=utf8",
+            "MaxOpenNum":50,
+            "MaxIdleNum":5
+        }
+    },
+    "RabbitMqFirst": {
+        "default": {
+            "DataSourceName": "amqp://guest:guest@127.0.0.1:5672"
+        }
+    },
+    "MongoDB": {
+        "default": {
+            "ApplyURI": "mongodb://devdrm:foo09213@192.168.71.244:27017",
+            "Database":"yibai_dcm_system"
+        }
+    },
+    "Redis": {
+        "default":{
+            "Addr": "192.168.71.244:7001",
+            "Password": "foo#09213",
+            "DB":0
+        }
+    }
+}
